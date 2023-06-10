@@ -1,43 +1,32 @@
 
 public class Classes {
+	String model;
+	String color;
+	int year;
+	
+	public Classes(String model,String color,int year ) {
+		this.model = model;
+		this.color = color;
+		this.year = year;	
+	}
+	public void displayInfo() {
+		System.out.println("Model: " + model);
+		System.out.println("Color: " + color);
+		System.out.println("Year: " + year);
+	}
 
-	String name;
-	int age;
-	String address;
-	
-	public Classes(String name,int age,String address) {
-		this.name = name;
-		this.age = age;
-		this.address = address;
-	}
-	public void setName(String name) {
-		this.name = name;
-	}
-	public void setAge(int age) {
-		this.age = age;
-	}
-	public void setAddress(String address) {
-		this.address = address;
-	}
-	public String getName() {
-		return name;
-	}
-	public int getAge() {
-		return age;
-	}
-	public String getAddress() {
-		return address;
-	}
-	
-	@Override
-	public String toString() {
-		return("Student name is "+ this.getName()+",age is: "+this.getAge()+"and address is: "+this.getAddress());
-		}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Classes ram = new Classes("Ram",25,"100/14,Nehru Street,Coimbatore");
-		System.out.println(ram.toString());
-
+		Classes car1 = new Classes("Toyoto","Red",2020);
+		Classes car2 = new Classes("Mercedes Benz","Blue",2016);
+		
+		System.out.println("Car 1: ");
+		car1.displayInfo();
+		
+		System.out.println();
+		
+		System.out.println("Car 2: ");
+		car2.displayInfo();
 	}
 
 }
