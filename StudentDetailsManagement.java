@@ -4,15 +4,14 @@ import java.util.Scanner;
 
 public class StudentDetailsManagement {
     public static void main(String[] args) {
-        // Create a HashMap to store student details
+    
         Map<String, String> studentDetails = new HashMap<>();
 
-        // Create a Scanner object for user input
         Scanner scanner = new Scanner(System.in);
 
-        // Student details management loop
+      
         while (true) {
-            // Prompt the user for an action
+         
             System.out.println("Select an action:");
             System.out.println("1. Add student detail");
             System.out.println("2. Remove student detail");
@@ -20,11 +19,11 @@ public class StudentDetailsManagement {
             System.out.println("4. View student details");
             System.out.println("5. Exit");
 
-            // Read the user's choice
+          
             int choice = scanner.nextInt();
-            scanner.nextLine(); // Consume the newline character
+            scanner.nextLine(); 
 
-            // Perform the chosen action
+           
             switch (choice) {
                 case 1:
                     System.out.print("Enter the student ID: ");
@@ -67,7 +66,7 @@ public class StudentDetailsManagement {
                     System.out.println("Invalid choice. Please try again.");
             }
 
-            // Print a blank line for separation
+        
             System.out.println();
             scanner.close();
         }
